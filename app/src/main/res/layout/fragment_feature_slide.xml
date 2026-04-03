@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slideRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp">
+
+    <!-- ===== MAIN SLIDE CARD ===== -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/slideCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:background="@drawable/glass_card_bg"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:strokeColor="@color/glass_border"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Shine Effect Overlay -->
+        <View
+            android:id="@+id/shineOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shine_effect"
+            android:alpha="0.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="26dp">
+
+            <!-- Icon Ring Container -->
+            <FrameLayout
+                android:id="@+id/iconContainer"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginBottom="18dp">
+
+                <!-- Outer Pulse Ring -->
+                <View
+                    android:id="@+id/outerRing"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/icon_ring_outer" />
+
+                <!-- Main Icon Ring -->
+                <LinearLayout
+                    android:id="@+id/iconRing"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/icon_ring_bg"
+                    android:gravity="center"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:id="@+id/ivFeatureIcon"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:text="📍"
+                        android:textSize="40sp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvFeatureTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Onboarding.Title"
+                android:layout_marginTop="18dp"
+                android:text="Geo Reminders" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvFeatureDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Onboarding.Description"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Never forget tasks at important places. Auto-triggers the moment you arrive." />
+
+            <!-- Bullet Points Container -->
+            <LinearLayout
+                android:id="@+id/bulletPointsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

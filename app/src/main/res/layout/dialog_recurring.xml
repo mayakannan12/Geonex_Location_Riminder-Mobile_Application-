@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_large">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeat"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="@dimen/margin_medium"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How often should this reminder repeat?"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="@dimen/margin_large"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_medium">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_radius_medium"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/border"
+            app:strokeWidth="1dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:background="@android:color/transparent">
+
+            <RadioButton
+                android:id="@+id/radioNever"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Never (Once)"
+                android:textSize="16sp"
+                android:padding="@dimen/padding_medium"
+                android:checked="true"
+                android:buttonTint="@color/primary"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_radius_medium"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/border"
+            app:strokeWidth="1dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:background="@android:color/transparent">
+
+            <RadioButton
+                android:id="@+id/radioDaily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily"
+                android:textSize="16sp"
+                android:padding="@dimen/padding_medium"
+                android:buttonTint="@color/primary"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_radius_medium"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/border"
+            app:strokeWidth="1dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:background="@android:color/transparent">
+
+            <RadioButton
+                android:id="@+id/radioWeekly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weekly"
+                android:textSize="16sp"
+                android:padding="@dimen/padding_medium"
+                android:buttonTint="@color/primary"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_radius_medium"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/border"
+            app:strokeWidth="1dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:background="@android:color/transparent">
+
+            <RadioButton
+                android:id="@+id/radioMonthly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monthly"
+                android:textSize="16sp"
+                android:padding="@dimen/padding_medium"
+                android:buttonTint="@color/primary"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_radius_medium"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/border"
+            app:strokeWidth="1dp"
+            android:background="@android:color/transparent">
+
+            <RadioButton
+                android:id="@+id/radioCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom..."
+                android:textSize="16sp"
+                android:padding="@dimen/padding_medium"
+                android:buttonTint="@color/primary"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RadioGroup>
+
+    <!-- Custom Interval Layout (initially hidden) -->
+    <LinearLayout
+        android:id="@+id/customIntervalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:padding="@dimen/padding_medium"
+        android:background="@color/background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Interval"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="@dimen/margin_small"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/customIntervalLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/primary"
+                app:hintTextColor="@color/primary"
+                android:layout_marginEnd="@dimen/margin_small"
+                tools:ignore="DuplicateIds">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCustomInterval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinnerIntervalUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:entries="@array/interval_units" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginVertical="@dimen/margin_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/text_secondary"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_marginStart="@dimen/margin_medium"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Geonex.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineHeight">32sp</item>
+    </style>
+
+    <style name="TextAppearance.Onboarding.Description" parent="TextAppearance.DMSans.Regular">
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineHeight">21.45sp</item> <!-- 1.65 * 13sp -->
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+</resources>

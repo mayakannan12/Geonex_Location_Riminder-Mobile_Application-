@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Refresh button to update statistics -->
+    <item
+        android:id="@+id/action_refresh"
+        android:title="@string/refresh"
+        android:icon="@drawable/ic_refresh"
+        app:showAsAction="ifRoom" />
+
+    <!-- Edit profile option -->
+    <item
+        android:id="@+id/action_edit_profile"
+        android:title="@string/edit_profile"
+        android:icon="@drawable/ic_edit"
+        app:showAsAction="never" />
+
+    <!-- Share app option -->
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/share_app"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="never" />
+
+    <!-- Settings option -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="never" />
+
+    <!-- Help & Feedback -->
+    <item
+        android:id="@+id/action_help"
+        android:title="@string/help_amp_feedback"
+        android:icon="@drawable/ic_help"
+        app:showAsAction="never" />
+
+</menu>

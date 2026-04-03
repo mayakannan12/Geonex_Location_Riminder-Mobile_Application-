@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ===== APP ===== -->
+    <string name="app_name">Geonex</string>
+
+    <!-- ===== ONBOARDING COMMON ===== -->
+    <string name="onboarding_skip">Skip →</string>
+    <string name="onboarding_next">Next →</string>
+    <string name="onboarding_get_started">Get Started ✦</string>
+
+    <!-- ===== ONBOARDING FEATURES ===== -->
+
+    <!-- Geo -->
+    <string name="feature_geo_title">Geo Reminders</string>
+    <string name="feature_geo_desc">Never forget tasks at important places. Auto-triggers when you arrive.</string>
+    <string-array name="feature_geo_bullets">
+        <item>Auto-trigger when you arrive</item>
+        <item>Customizable radius 100m–5km</item>
+        <item>Works when app is closed</item>
+    </string-array>
+
+    <!-- Voice -->
+    <string name="feature_voice_title">Voice-Powered</string>
+    <string name="feature_voice_desc">Create reminders hands-free using natural language.</string>
+    <string-array name="feature_voice_bullets">
+        <item>Natural language recognition</item>
+        <item>Instant title &amp; category</item>
+        <item>Works offline</item>
+    </string-array>
+
+    <!-- Recurring -->
+    <string name="feature_recurring_title">Smart Recurrence</string>
+    <string name="feature_recurring_desc">Set once and repeat automatically.</string>
+    <string-array name="feature_recurring_bullets">
+        <item>Daily · Weekly · Monthly</item>
+        <item>Custom intervals</item>
+        <item>Auto-reset after completion</item>
+    </string-array>
+
+    <!-- Battery -->
+    <string name="feature_battery_title">Battery Smart</string>
+    <string name="feature_battery_desc">Optimized for low battery usage.</string>
+    <string-array name="feature_battery_bullets">
+        <item>Adaptive tracking</item>
+        <item>Sleep mode</item>
+        <item>Less battery usage</item>
+    </string-array>
+
+    <!-- Category -->
+    <string name="feature_category_title">AI Categories</string>
+    <string name="feature_category_desc">Auto-organizes reminders using AI.</string>
+    <string-array name="feature_category_bullets">
+        <item>12+ categories</item>
+        <item>Real-time detection</item>
+        <item>High accuracy</item>
+    </string-array>
+
+    <!-- ===== BASIC APP TEXT ===== -->
+    <string name="welcome_title">Geonex</string>
+    <string name="welcome_desc">Smart Location Reminder</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+
+    <!-- Buttons -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="apply">Apply</string>
+    <string name="change">Change</string>
+    <string name="done">Done</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+
+    <!-- Reminder -->
+    <string name="add_reminder">Add Reminder</string>
+    <string name="new_reminder">New Reminder</string>
+    <string name="title_hint">e.g., Buy milk</string>
+    <string name="location_hint">Select location</string>
+    <string name="tap_to_speak">Tap to speak</string>
+    <string name="radius">Radius</string>
+    <string name="select_trigger_distance">Select trigger distance</string>
+    <string name="custom_radius">Custom radius</string>
+    <string name="enter_meters">Enter meters</string>
+    <string name="radius_hint">Set your preferred radius</string>
+    <string name="selected_radius">Selected radius</string>
+    <string name="repeat">Repeat</string>
+    <string name="recurring_reminder">Recurring reminder</string>
+    <string name="never_once">Never (once)</string>
+    <string name="category">Category</string>
+    <string name="select_category">Select Category</string>
+
+    <!-- Distance options -->
+    <string name="_100m">100 meters</string>
+    <string name="_250m">250 meters</string>
+    <string name="_500m">500 meters</string>
+    <string name="_1km">1 kilometer</string>
+    <string name="_2km">2 kilometers</string>
+    <string name="_5km">5 kilometers</string>
+
+    <!-- Distance Units -->
+    <string name="meters">meters</string>
+    <string name="kilometers">kilometers</string>
+
+    <!-- Recurring Options -->
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="custom">Custom</string>
+
+    <!-- Category Names -->
+    <string name="category_grocery">Grocery</string>
+    <string name="category_medicine">Medicine</string>
+    <string name="category_bills">Bills</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_work">Work</string>
+    <string name="category_personal">Personal</string>
+    <string name="category_other">Other</string>
+
+    <!-- Status -->
+    <string name="reminder_saved">Reminder saved</string>
+    <string name="reminder_deleted">Reminder deleted</string>
+
+    <!-- Errors -->
+    <string name="error">Error</string>
+    <string name="error_location">Location not found</string>
+    <string name="x">X</string>
+    <string name="e">E</string>
+    <string name="geonex">GEONEX</string>
+
+    <!-- ===== ADDED MISSING RESOURCES FOR BUILD FIX ===== -->
+
+    <!-- Activity Add Reminder -->
+    <string name="auto_detection_active">Auto Detection Active</string>
+    <string name="save_reminder">Save Reminder</string>
+
+    <!-- Activity Home -->
+    <string name="today_progress">Today\'s Progress</string>
+    <string name="search_hint">Search reminders...</string>
+
+    <!-- Activity Profile -->
+    <string name="mayakannan_n">Mayakannan N</string>
+    <string name="mayakannan122004_gmail_com">mayakannan122004@gmail.com</string>
+    <string name="total">Total</string>
+    <string name="active">Active</string>
+    <string name="backup_amp_restore">Backup &amp; Restore</string>
+    <string name="export_import_your_reminders">Export/Import your reminders</string>
+
+    <!-- Activity Settings -->
+    <string name="appearance">Appearance</string>
+    <string name="restore_data">Restore Data</string>
+    <string name="data_management">Data Management</string>
+    <string name="storage_usage">Storage Usage</string>
+    <string name="_0_reminders_0_kb">0 Reminders | 0 KB</string>
+
+    <!-- Dialog Snooze -->
+    <string name="snooze">Snooze</string>
+    <string name="remind_me_again_in">Remind me again in</string>
+    <string name="_15m">15m</string>
+    <string name="_30m">30m</string>
+
+    <!-- Additional helpful strings that might be needed -->
+    <string name="reminders">Reminders</string>
+    <string name="no_reminders">No reminders found</string>
+    <string name="settings">Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Language</string>
+    <string name="about">About</string>
+    <string name="version">Version 1.0.0</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="help_feedback">Help &amp; Feedback</string>
+    <string name="export_data">Export Data</string>
+    <string name="import_data">Import Data</string>
+    <string name="delete_all">Delete All</string>
+    <string name="confirm_delete_all">Are you sure you want to delete all reminders?</string>
+    <string name="location_permission_required">Location permission required for geo-reminders</string>
+    <string name="enable_location">Enable Location</string>
+
+    <!-- Add to strings.xml after the existing strings -->
+    <string name="_1h">1h</string>
+    <string name="_2h">2h</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="choose_categories">Choose Categories</string>
+    <string name="categories_desc">Select categories you\'re interested in</string>
+    <string name="permission_required">Permissions Required</string>
+    <string name="permission_desc">Geonex needs some permissions to work properly</string>
+    <string name="location_permission">Location Permission</string>
+    <string name="location_desc">Required for geo-fencing reminders</string>
+    <string name="notification_permission">Notification Permission</string>
+    <string name="notification_desc">Send you timely reminders and alerts</string>
+    <string name="background_location">Background Location</string>
+    <string name="background_desc">Allows reminders to trigger even when app is closed</string>
+    <string name="battery_opt">Battery Optimization</string>
+    <string name="battery_desc">Disable battery optimization for reliable reminders</string>
+    <string name="grant">Grant</string>
+    <string name="never_forget_tasks_at_important_places_auto_triggers_the_moment_you_arrive">Never forget tasks at important places. Auto-triggers the moment you arrive.</string>
+    <string name="geo_reminders">Geo Reminders</string>
+
+
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== PREMIUM GRADIENT COLORS ===== -->
+    <color name="gradient_start">#667EEA</color>
+    <color name="gradient_mid">#764BA2</color>
+    <color name="gradient_end">#A855F7</color>
+
+    <!-- ===== GLASS EFFECT ===== -->
+    <color name="glass_fill">#1CFFFFFF</color>
+    <color name="glass_border">#38FFFFFF</color>
+    <color name="glass_dark">#14FFFFFF</color>
+
+    <!-- ===== BUTTON COLORS ===== -->
+    <color name="gold_gradient_start">#F6C90E</color>
+    <color name="gold_gradient_end">#F59E0B</color>
+    <color name="gold_text">#3D2700</color>
+    <color name="white_button">#E6FFFFFF</color>
+    <color name="white_button_text">#5A32A3</color>
+
+    <!-- ===== PRIMARY THEME ===== -->
+    <color name="primary">#667EEA</color>
+    <color name="primary_dark">#5A67D8</color>
+    <color name="primary_darker">#381E72</color>
+    <color name="primary_container">#EADDFF</color>
+    <color name="primary_container_dark">#2A2A5A</color> <!-- ADDED: Dark variant -->
+
+    <!-- ===== SECONDARY ===== -->
+    <color name="secondary">#764BA2</color>
+    <color name="secondary_dark">#5A3A7A</color> <!-- ADDED: Dark variant -->
+    <color name="secondary_darker">#3A2A5A</color> <!-- ADDED: Darker variant -->
+    <color name="secondary_container">#E8DEF8</color>
+    <color name="secondary_container_dark">#3A2A5A</color> <!-- ADDED: Dark variant -->
+
+    <!-- ===== BACKGROUND & SURFACE ===== -->
+    <color name="background">#F8FAFC</color>
+    <color name="background_dark">#1C1B1F</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_dark">#1C1B1F</color>
+    <color name="surface_variant">#E7E0EC</color>
+    <color name="surface_variant_dark">#49454F</color>
+
+    <!-- ===== TEXT COLORS ===== -->
+    <color name="text_primary">#FFFFFF</color> <!-- For premium UI -->
+    <color name="text_secondary">#B8FFFFFF</color>
+    <color name="text_bullet">#E0FFFFFF</color>
+    <color name="text_muted">#73FFFFFF</color>
+
+    <!-- Light Mode Text -->
+    <color name="text_primary_light">#1E293B</color>
+    <color name="text_secondary_light">#64748B</color>
+    <color name="text_hint">#94A3B8</color>
+
+    <!-- Dark Mode Text -->
+    <color name="text_secondary_dark">#8A9AA8</color> <!-- ADDED: Dark variant -->
+    <color name="text_primary_dark">#F1F5F9</color> <!-- ADDED: Dark variant -->
+
+    <!-- ===== STATUS COLORS ===== -->
+    <color name="success">#22C55E</color>
+    <color name="error">#EF4444</color>
+    <color name="warning">#F59E0B</color>
+    <color name="info">#0288D1</color>
+
+    <!-- ===== CONTAINERS ===== -->
+    <color name="success_container">#E8F5E9</color>
+    <color name="error_container">#FFDAD6</color>
+    <color name="warning_container">#FFF3E0</color>
+    <color name="info_container">#E1F5FE</color>
+
+    <!-- ===== ICON RINGS ===== -->
+    <color name="ring_fill">#2EFFFFFF</color>
+    <color name="ring_border">#59FFFFFF</color>
+    <color name="ring_inner">#26FFFFFF</color>
+
+    <!-- ===== DOT INDICATORS ===== -->
+    <color name="dot_inactive">#4DFFFFFF</color>
+    <color name="dot_active">#FFFFFF</color>
+
+    <!-- ===== CATEGORY COLORS ===== -->
+    <color name="grocery_bg">#DCFCE7</color>
+    <color name="grocery_text">#166534</color>
+
+    <color name="medicine_bg">#FEE2E2</color>
+    <color name="medicine_text">#991B1B</color>
+
+    <color name="bills_bg">#FEF9C3</color>
+    <color name="bills_text">#854D0E</color>
+
+    <color name="shopping_bg">#E0F2FE</color>
+    <color name="shopping_text">#075985</color>
+
+    <color name="work_bg">#EDE9FE</color>
+    <color name="work_text">#5B21B6</color>
+
+    <!-- ===== DIVIDER & BORDER ===== -->
+    <color name="divider">#F1F5F9</color>
+    <color name="border">#E2E8F0</color>
+    <color name="overlay">#80000000</color>
+
+    <!-- ===== LEGACY COLORS ===== -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="tertiary_container" />
+
+</resources>

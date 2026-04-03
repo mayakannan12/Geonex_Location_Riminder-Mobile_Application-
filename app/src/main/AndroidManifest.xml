@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:name=".GeonexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Geonex"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBcbi_NSkZ9F68-gLbDuvuyfsxsN0DEi4Q" />
+
+
+        <!-- Add these activities inside <application> tag -->
+
+        <!-- Phase 2: Family Activity -->
+        <activity
+            android:name=".FamilyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Geonex" />
+
+        <!-- Phase 4: Search Activity (placeholder) -->
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Geonex" />
+
+        <!-- Phase 5: Settings Activity (placeholder) -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Geonex" />
+
+        <!-- App Lock Activity - LAUNCHER with main theme -->
+        <activity
+            android:name=".AppLockActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Geonex"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Geonex"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Add Reminder Activity - DECLARED ONLY ONCE -->
+        <activity
+            android:name=".AddReminderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Geonex"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Other Activities -->
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Geonex"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Geonex"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Geonex"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ReminderDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Geonex"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".BackupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Geonex"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".DeveloperActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Geonex"
+            android:screenOrientation="portrait" />
+
+        <!-- Services -->
+        <service
+            android:name=".GeofenceMonitoringService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+        <service
+            android:name=".LocationTrackingService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+        <service
+            android:name="com.google.android.gms.location.GeofencingService"
+            android:exported="false"
+            tools:node="merge"
+            tools:ignore="MissingClass" />
+
+        <!-- Receivers -->
+        <receiver
+            android:name=".GeofenceBroadcastReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".ServiceStateReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".LocationUpdateReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".NotificationActionReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".NotificationDismissedReceiver"
+            android:exported="false" />
+
+        <!-- Providers -->
+        <provider
+            android:name="androidx.work.impl.WorkManagerInitializer"
+            android:authorities="${applicationId}.workmanager-init"
+            android:enabled="false"
+            android:exported="false"
+            tools:node="remove"
+            tools:ignore="MissingClass" />
+
+        <!-- Google Play Services Version -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

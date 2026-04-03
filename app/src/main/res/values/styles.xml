@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application style -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/background</item>
+    </style>
+
+    <!-- TextInputLayout style -->
+    <style name="Widget.Geonex.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/primary</item>
+    </style>
+
+    <!-- Safety & Error Messages -->
+    <string name="safety_check_title">⚠️ Safety Check</string>
+    <string name="gps_disabled">GPS is disabled. Please enable location for accurate reminders.</string>
+    <string name="permission_missing_title">Permissions Missing</string>
+    <string name="battery_optimization_warning">For best results, disable battery optimization for Geonex</string>
+    <string name="doze_mode_warning">Device is in doze mode. Reminders may be delayed.</string>
+    <string name="google_play_services_error">Google Play Services needs update</string>
+    <string name="recovery_attempt">Attempting to recover…</string>
+    <string name="crash_message">App crashed. We\'re working to fix it.</string>
+
+    <!-- DM Sans Text Appearance -->
+    <style name="TextAppearance.DMSans" parent="TextAppearance.Material3.BodyLarge">
+        <!-- You can customize this style -->
+        <item name="fontFamily">@font/dm_sans_regular</item>
+    </style>
+
+    <!-- Syne Text Appearance -->
+    <style name="TextAppearance.Syne" parent="TextAppearance.Material3.BodyLarge">
+        <!-- You can customize this style -->
+        <item name="fontFamily">@font/syne_bold</item>
+    </style>
+</resources>

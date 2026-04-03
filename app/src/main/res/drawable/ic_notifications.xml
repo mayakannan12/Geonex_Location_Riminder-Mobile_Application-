@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+
+    <!-- Outer Deep Purple -->
+    <path
+        android:fillColor="#4A148C"
+        android:pathData="M14,2A12,12 0 1,1 2,14A12,12 0 0,1 14,2Z"/>
+
+    <!-- Inner Royal Purple -->
+    <path
+        android:fillColor="#7B1FA2"
+        android:pathData="M14,4A10,10 0 1,1 4,14A10,10 0,0,1 14,4Z"/>
+
+    <!-- Soft Shine -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.12"
+        android:pathData="M14,4A10,10 0 0,1 24,14C24,9 20,5 14,4Z"/>
+
+    <!-- Bell Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M14,23a2,2 0 0,0 2,-2h-4a2,2 0 0,0 2,2zM19,17v-5c0,-3 -1.7,-5.5 -4.5,-6.2V5c0,-1 -0.8,-1.8 -1.8,-1.8S11,4 11,5v0.8C8.2,6.5 6.5,9 6.5,12v5L5,18.5V20h18v-1.5L19,17z"/>
+</vector>

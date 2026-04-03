@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Image dimensions for different devices -->
+    <dimen name="image_thumbnail_width">100dp</dimen>
+    <dimen name="image_thumbnail_height">100dp</dimen>
+    <dimen name="image_preview_width">300dp</dimen>
+    <dimen name="image_preview_height">200dp</dimen>
+
+    <!-- List optimization -->
+    <integer name="recycler_view_pool_size">10</integer>
+    <integer name="prefetch_count">4</integer>
+
+    <!-- Cache sizes -->
+    <integer name="memory_cache_size">10485760</integer> <!-- 10MB -->
+    <integer name="disk_cache_size">52428800</integer> <!-- 50MB -->
+</resources>

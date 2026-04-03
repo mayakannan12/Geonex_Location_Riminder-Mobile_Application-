@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ===== MATERIAL 3 LIGHT THEME ===== -->
+    <style name="Theme.Geonex" parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- ===== COLORS ===== -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary_light</item>
+
+        <!-- ===== STATUS & NAV BAR ===== -->
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+
+        <!-- ===== GLOBAL FONT ===== -->
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+
+        <!-- ===== SHAPES ===== -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Geonex.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Geonex.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Geonex.Large</item>
+
+        <!-- ===== TYPOGRAPHY ===== -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Geonex.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Geonex.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Geonex.HeadlineSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Geonex.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Geonex.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Geonex.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Geonex.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Geonex.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Geonex.LabelSmall</item>
+
+        <!-- Legacy support -->
+        <item name="textAppearanceBody1">@style/TextAppearance.Geonex.BodyLarge</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Geonex.BodyMedium</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Geonex.LabelLarge</item>
+
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- ===== MATERIAL 3 DARK THEME ===== -->
+    <style name="Theme.Geonex.Dark" parent="Theme.Material3.Dark.NoActionBar">
+
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary_darker</item>
+        <item name="colorPrimaryContainer">@color/primary_container_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/secondary_dark</item>
+        <item name="colorSecondaryVariant">@color/secondary_darker</item>
+        <item name="colorSecondaryContainer">@color/secondary_container_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorSurfaceVariant">@color/surface_variant_dark</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary_dark</item>
+
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:navigationBarColor">@color/background_dark</item>
+
+        <!-- ===== GLOBAL FONT ===== -->
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+
+        <!-- Shapes -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Geonex.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Geonex.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Geonex.Large</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Geonex.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Geonex.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Geonex.HeadlineSmall</item>
+
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+
+    <!-- ===== SPLASH THEME ===== -->
+    <style name="Theme.Geonex.Splash" parent="Theme.Geonex">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- ===== SHAPES ===== -->
+    <style name="ShapeAppearance.Geonex.Small" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Geonex.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Geonex.Large" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- ===== TYPOGRAPHY ===== -->
+    <style name="TextAppearance.Geonex.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!-- ===== PREMIUM FONT STYLES ===== -->
+    <style name="TextAppearance.Syne.Bold">
+        <item name="android:fontFamily">@font/syne_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Syne.ExtraBold">
+        <item name="android:fontFamily">@font/syne_extrabold</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.DMSans.Regular">
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.DMSans.Medium">
+        <item name="android:fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.DMSans.SemiBold">
+        <item name="android:fontFamily">@font/dm_sans_semibold</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- ===== PREMIUM ONBOARDING TEXT STYLES ===== -->
+    <style name="TextAppearance.Onboarding.Logo" parent="TextAppearance.Syne.ExtraBold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.125</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.Onboarding.Title" parent="TextAppearance.Syne.Bold">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.Onboarding.Description" parent="TextAppearance.DMSans.Regular">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.Onboarding.Bullet" parent="TextAppearance.DMSans.Regular">
+        <item name="android:textSize">12.5sp</item>
+        <item name="android:textColor">@color/text_bullet</item>
+    </style>
+
+    <style name="TextAppearance.Onboarding.Button" parent="TextAppearance.DMSans.SemiBold">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Onboarding.Skip" parent="TextAppearance.DMSans.Medium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_bullet</item>
+    </style>
+
+    <!-- ===== ADD THE MISSING TextAppearance.Geonex.Title STYLE ===== -->
+    <style name="TextAppearance.Geonex.Title" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_primary_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/dm_sans_semibold</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.Subtitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_secondary_light</item>
+    </style>
+
+    <style name="TextAppearance.Geonex.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_primary_light</item>
+    </style>
+
+</resources>
