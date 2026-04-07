@@ -75,3 +75,93 @@ Geonex lets you create location-based reminders that trigger automatically when 
 ---
 
 ## 🏗️ Project Structure
+com.geonex/
+│
+├── data/
+│ ├── local/ // Room entities, DAO, Database
+│ └── repository/ // ReminderRepository
+│
+├── ui/
+│ ├── onboarding/ // 4-screen ViewPager2 tutorial
+│ ├── home/ // Reminder list + search + swipe
+│ ├── addreminder/ // Map + voice + category detection
+│ └── main/ // MainActivity container
+│
+├── services/
+│ ├── GeofenceHelper.java
+│ ├── GeofenceBroadcastReceiver.java
+│ └── BootReceiver.java
+│
+├── utils/
+│ ├── NotificationHelper.java
+│ ├── PermissionHelper.java
+│ └── Constants.java
+│
+└── GeonexApplication.java
+
+
+---
+
+## 🔧 Installation & Setup
+
+### Prerequisites
+- Android Studio Hedgehog | 2023.3.1+
+- Minimum SDK: API 24 (Android 7.0)
+- Google Maps API Key
+
+### Steps
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/geonex.git
+cd geonex
+
+2.Get a Google Maps API Key
+
+Go to Google Cloud Console
+
+Enable Maps SDK for Android
+
+Create an API key
+
+Add to local.properties:
+MAPS_API_KEY=YOUR_KEY_HERE
+
+3.Open in Android Studio → Build → Run
+
+📦 Dependencies (Partial)
+implementation 'com.google.android.gms:play-services-maps:18.2.0'
+implementation 'com.google.android.gms:play-services-location:21.0.1'
+implementation 'androidx.room:room-runtime:2.6.0'
+implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+implementation 'com.google.android.material:material:1.11.0'
+
+Full list: build.gradle (app level)
+
+🧪 Testing Scenarios
+Scenario	Expected Result
+GPS OFF while creating reminder	Show dialog to enable GPS
+Permission denied	Graceful fallback + explanation
+Phone restart	Geofences re-registered automatically
+Enter geofence area	Notification appears with title & location
+Background app	Still triggers notification
+Recurring reminder completed	Reactivates on next schedule
+📄 Future Scope (Post-Phase 4)
+Cloud backup (Firebase / Drive)
+
+Share reminders with friends
+
+Geofence sharing (family location alerts)
+
+Wear OS integration
+
+AI-based smart suggestion for radius & categories
+
+👨‍💻 Author
+Mayakannan.N
+📧 mayakannan122004@gmail.com
+🔗 https://www.linkedin.com/in/mayakannan2004/
+🐙 https://github.com/mayakannan12/Geonex_Location_Riminder-Mobile_Application-
+
+📃 License
+This project is licensed under the MIT License — see the LICENSE file for details.
